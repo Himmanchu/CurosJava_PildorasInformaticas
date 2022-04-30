@@ -12,7 +12,7 @@ public class Acceso_aplicación {
 		
 		while(clave.equals(pass)==false) {
 			
-			pass=JOptionPane.showInputDialog("Introduce la contraseña, por favor");
+			pass=JOptionPane.showInputDialog("Introduce la contraseña, por favor.");
 			
 			if(clave.equals(pass)==false) {
 				
