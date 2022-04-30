@@ -21,7 +21,7 @@ public class Acceso_aplicación {
 			}
 		}
 		
-		System.out.println("Contraseña correcta. Acceso permitido");
+		System.out.println("Contraseña correcta. Acceso permitido.");
 	}
 
 }
