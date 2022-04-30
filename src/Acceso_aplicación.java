@@ -16,7 +16,7 @@ public class Acceso_aplicación {
 			
 			if(clave.equals(pass)==false) {
 				
-				System.out.println("Contraseña incorrecta");
+				System.out.println("Contraseña incorrecta.");
 				
 			}
 		}
