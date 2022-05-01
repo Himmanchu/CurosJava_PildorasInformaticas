@@ -4,7 +4,7 @@ public class Coche {
 
 	private int ruedas;
 	
-	int largo;
+	private int largo;
 	
 	int ancho;
 	
