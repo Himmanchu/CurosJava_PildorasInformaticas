@@ -6,11 +6,11 @@ public class Coche {
 	
 	private int largo;
 	
-	int ancho;
+	private int ancho;
 	
-	int motor;
+	private int motor;
 	
-	int peso;
+	private int peso;
 
 	
 	public Coche() {
