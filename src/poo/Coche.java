@@ -2,7 +2,7 @@ package poo;
 
 public class Coche {
 
-	int ruedas;
+	private int ruedas;
 	
 	int largo;
 	
