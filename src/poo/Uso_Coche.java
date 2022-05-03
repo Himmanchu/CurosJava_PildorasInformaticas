@@ -9,6 +9,10 @@ public class Uso_Coche {
 		
 		System.out.println(Renault.dime_largo());
 		
+		Renault.establece_color();
+		
+		System.out.println(Renault.dime_color());
+		
 		
 		//System.out.println("Este coche tiene " + Renault.ruedas + " ruedas.");
 		

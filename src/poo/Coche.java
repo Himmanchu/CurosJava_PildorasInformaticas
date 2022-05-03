@@ -10,8 +10,17 @@ public class Coche {
 	
 	private int motor;
 	
-	private int peso;
+	private int peso_plataforma;
 
+	String color;
+
+	int peso_total;
+	
+	boolean asientos_cuero, climatizador;
+	
+	
+	
+	
 	
 	public Coche() { //Método constructor
 		
@@ -23,12 +32,24 @@ public class Coche {
 		
 		motor=1600;
 		
-		peso=500;
+		peso_plataforma=500;
+	
+		
 		
 	}
 	
-	public String dime_largo(){
+	public String dime_largo(){  //MÉTODO GETTER
 		
 		return "El largo del coche es " + largo;
+	}
+	
+	public void establece_color() {  //MÉTODO SETTER
+		
+		color="azul";
+	}
+	
+	public String dime_color() {
+		
+		return "El color del coche es " + color;
 	}
 }
