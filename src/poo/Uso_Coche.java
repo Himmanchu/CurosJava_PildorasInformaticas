@@ -7,7 +7,10 @@ public class Uso_Coche {
 
 		Coche Renault=new Coche();  //INSTANCIAR UNA CLASE. EJEMPLAR UNA CLASE
 		
-		System.out.println("Este coche tiene " + Renault.ruedas + " ruedas.");
+		System.out.println(Renault.dime_largo());
+		
+		
+		//System.out.println("Este coche tiene " + Renault.ruedas + " ruedas.");
 		
 		
 	} 

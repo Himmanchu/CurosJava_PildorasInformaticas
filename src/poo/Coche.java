@@ -13,7 +13,7 @@ public class Coche {
 	private int peso;
 
 	
-	public Coche() {
+	public Coche() { //Método constructor
 		
 		ruedas=4;
 		
@@ -25,5 +25,10 @@ public class Coche {
 		
 		peso=500;
 		
+	}
+	
+	public String dime_largo(){
+		
+		return "El largo del coche es " + largo;
 	}
 }
