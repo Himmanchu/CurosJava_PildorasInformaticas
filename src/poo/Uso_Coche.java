@@ -13,10 +13,13 @@ public class Uso_Coche {
 		
 		Renault.configura_asientos("si");
 		
+		Renault.configura_climatizador("si");
+		
 
 		
 		System.out.println(Renault.dime_color());
 		System.out.println(Renault.dime_asientos());
+		System.out.println(Renault.dime_climatizador());
 		
 		//System.out.println("Este coche tiene " + Renault.ruedas + " ruedas.");
 		

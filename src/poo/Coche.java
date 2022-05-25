@@ -80,4 +80,32 @@ public class Coche {
 			return "El coche tiene asientos de serie";
 		}
 	}
+	
+	public void configura_climatizador(String climatizador) {    //SETTER
+		
+		if(climatizador=="si") {
+			
+			this.climatizador=true;
+			
+		}else {
+			this.climatizador=false;
+		}
+	}
+	
+	public String dime_climatizador() {
+		
+		if(climatizador==true) {
+			
+			return "El coche incorpora climatizador";
+		
+		}else {
+			
+			return "El coche lleva aire acondicionado";
+		}
+	}
+	
+	
+	
+	
+	
 }
