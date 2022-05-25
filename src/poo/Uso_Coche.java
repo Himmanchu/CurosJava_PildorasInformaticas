@@ -7,9 +7,11 @@ public class Uso_Coche {
 
 		Coche Renault=new Coche();  //INSTANCIAR UNA CLASE. EJEMPLAR UNA CLASE
 		
-		System.out.println(Renault.dime_largo());
+		System.out.println(Renault.dime_datos_generales());
 		
 		Renault.establece_color("naranja");
+		
+
 		
 		System.out.println(Renault.dime_color());
 		

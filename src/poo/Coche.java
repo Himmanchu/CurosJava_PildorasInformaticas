@@ -12,11 +12,11 @@ public class Coche {
 	
 	private int peso_plataforma;
 
-	String color;
+	private String color;
 
-	int peso_total;
+	private int peso_total;
 	
-	boolean asientos_cuero, climatizador;
+	private boolean asientos_cuero, climatizador;
 	
 	
 	
@@ -38,9 +38,11 @@ public class Coche {
 		
 	}
 	
-	public String dime_largo(){  //MÉTODO GETTER
+	public String dime_datos_generales(){  //MÉTODO GETTER
 		
-		return "El largo del coche es " + largo;
+		return "La plataforma del vehículo tiene " + ruedas + " ruedas " +
+		". Mide " + largo/1000 + " metros con un ancho de " + ancho + 
+		" cm y un peso de plataforma de " + peso_plataforma + " kg"; 
 	}
 	
 	public void establece_color(String color_coche) {  //MÉTODO SETTER
