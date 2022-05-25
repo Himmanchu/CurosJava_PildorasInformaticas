@@ -55,4 +55,29 @@ public class Coche {
 		
 		return "El color del coche es " + color;
 	}
+	
+	public void configura_asientos(String asientos_cuero) {    //SETTER
+		
+		if(asientos_cuero=="si") {
+			
+			this.asientos_cuero=true;
+			
+		}else {
+			this.asientos_cuero=false;
+			
+		}
+		
+	}
+	
+	public String dime_asientos() {  //GETTER
+		
+		if(asientos_cuero==true) {
+			
+			return "El coche tiene asientos de cuero";
+			
+		}else {
+			
+			return "El coche tiene asientos de serie";
+		}
+	}
 }
