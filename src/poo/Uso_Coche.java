@@ -9,7 +9,7 @@ public class Uso_Coche {
 		
 		System.out.println(Renault.dime_largo());
 		
-		Renault.establece_color();
+		Renault.establece_color("naranja");
 		
 		System.out.println(Renault.dime_color());
 		

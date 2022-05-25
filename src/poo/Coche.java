@@ -43,9 +43,10 @@ public class Coche {
 		return "El largo del coche es " + largo;
 	}
 	
-	public void establece_color() {  //MÉTODO SETTER
+	public void establece_color(String color_coche) {  //MÉTODO SETTER
 		
-		color="azul";
+		color=color_coche;
+		//color="azul";
 	}
 	
 	public String dime_color() {
