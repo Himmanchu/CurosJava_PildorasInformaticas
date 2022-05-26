@@ -37,17 +37,33 @@ public class Uso_Empleado {   //clase principal
 	
 	misEmpleados[2]=new Empleado("María Martín", 105000, 2002, 3, 15);
 	
-	for(int i=0; i<3; i++) {
+	/*for(int i=0; i<3; i++) {      //bucle for
 		
 		misEmpleados[i].subeSueldo(5);
+	}*/
+	
+	for(Empleado e: misEmpleados) {     //bucle for each
+		
+		e.subeSueldo(5);
+		
+		
 	}
 	
-	for(int i=0; i<3; i++) {
+	/*for(int i=0; i<3; i++) {    //bucle for
 		
 		System.out.println("Nombre: " + misEmpleados[i].dameNombre() + 
 				" Sueldo: " + misEmpleados[i].dameSueldo() +
 				" Fecga de Alta: " + misEmpleados[i].dameFechaContrato());
+	}*/
+	
+	for(Empleado e:misEmpleados) {     //bucle for each
+		
+		System.out.println("Nombre: " + e.dameNombre() + 
+				" Sueldo: " + e.dameSueldo() +
+				" Fecga de Alta: " + e.dameFechaContrato());
+		
 	}
+	
 		
 	}
 	
