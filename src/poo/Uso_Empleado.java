@@ -18,6 +18,13 @@ class Empleado{
 	
 	public Empleado(String nom, double sue, int agno, int mes, int dia) {
 		
+		nombre=nom;
+		
+		sueldo=sue;
+		
+		GregorianCalendar calendario=new GregorianCalendar(agno, mes-1, dia);
+		
+		altaContrato=calendario.getTime();
 		
 		
 	}
