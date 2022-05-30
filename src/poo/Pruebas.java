@@ -2,7 +2,7 @@ package poo;
 
 public class Pruebas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {   //Clase principal siempre con método MAIN
 		// TODO Auto-generated method stub
 
 		Empleados trabajador1= new Empleados("Paco");   //creación de objetos
@@ -17,9 +17,7 @@ public class Pruebas {
 		
 		trabajador1.cambiaSeccion("RRHH");
 		
-		
-		
-		
+
 		
 		System.out.println(trabajador1.devuelveDatos() + "\n" + trabajador2.devuelveDatos() 
 		+ "\n" + trabajador3.devuelveDatos() + "\n" + trabajador4.devuelveDatos() +
@@ -27,13 +25,9 @@ public class Pruebas {
 		
 		System.out.println(Empleados.dameIdSiguiente());
 		
-		
-		
 	}
 
 }
-
-
 
 class Empleados{
 	
@@ -48,27 +42,24 @@ class Empleados{
 		IdSiguiente++;
 	
 		
-		
 	}
 	
 	public void cambiaSeccion(String seccion) { //setter
 		
 		this.seccion=seccion;
-		
-		
+	
 		
 	}
 	
 	
 	public String devuelveDatos() {    //getter
 		
-		return "El nombre es: " + nombre + " la sección es " + seccion + " y el Id=" + Id;
-		
+		return "El nombre es: " + nombre + " la sección es " + seccion + " y el Id=" + Id;	
 	
 	}
 	
 	
-	public static String dameIdSiguiente() {
+	public static String dameIdSiguiente() {   //Método estático, NO ACTÚA SOBRE OBJETOS
 		
 		return "El IdSiguiente es: " + IdSiguiente;
 	}
