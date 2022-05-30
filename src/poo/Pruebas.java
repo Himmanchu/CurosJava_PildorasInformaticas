@@ -13,19 +13,20 @@ public class Pruebas {
 		
 		Empleados trabajador4= new Empleados("Marta");
 		
+		Empleados trabajador5= new Empleados("Carlos");
+		
 		trabajador1.cambiaSeccion("RRHH");
 		
 		
 		
 		
 		
-		System.out.println(trabajador1.devuelveDatos());
+		System.out.println(trabajador1.devuelveDatos() + "\n" + trabajador2.devuelveDatos() 
+		+ "\n" + trabajador3.devuelveDatos() + "\n" + trabajador4.devuelveDatos() +
+		"\n" + trabajador5.devuelveDatos());
 		
-		System.out.println(trabajador2.devuelveDatos());
+		System.out.println(Empleados.dameIdSiguiente());
 		
-		System.out.println(trabajador3.devuelveDatos());
-		
-		System.out.println(trabajador4.devuelveDatos());
 		
 		
 	}
@@ -66,6 +67,11 @@ class Empleados{
 	
 	}
 	
+	
+	public static String dameIdSiguiente() {
+		
+		return "El IdSiguiente es: " + IdSiguiente;
+	}
 		
 	
 	private final String nombre;   //al añadir el "final" conviertes la variable en constante
