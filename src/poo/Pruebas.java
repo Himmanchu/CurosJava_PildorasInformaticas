@@ -9,13 +9,23 @@ public class Pruebas {
 		
 		Empleados trabajador2= new Empleados("Ana");
 		
+		Empleados trabajador3= new Empleados("Antonio");
+		
+		Empleados trabajador4= new Empleados("Marta");
+		
 		trabajador1.cambiaSeccion("RRHH");
+		
+		
+		
 		
 		
 		System.out.println(trabajador1.devuelveDatos());
 		
 		System.out.println(trabajador2.devuelveDatos());
 		
+		System.out.println(trabajador3.devuelveDatos());
+		
+		System.out.println(trabajador4.devuelveDatos());
 		
 		
 	}
@@ -32,6 +42,11 @@ class Empleados{
 		
 		seccion="Administración";
 		
+		Id=IdSiguiente;
+		
+		IdSiguiente++;
+	
+		
 		
 	}
 	
@@ -43,18 +58,23 @@ class Empleados{
 		
 	}
 	
+	
 	public String devuelveDatos() {    //getter
 		
-		return "El nombre es: " + nombre + " y la sección es " + seccion;
+		return "El nombre es: " + nombre + " la sección es " + seccion + " y el Id=" + Id;
 		
 	
 	}
 	
 		
 	
-	private String nombre;
+	private final String nombre;   //al añadir el "final" conviertes la variable en constante
 	
 	private String seccion;
+	
+	private int Id;
+	
+	private static int IdSiguiente=1;
 	
 }
 
