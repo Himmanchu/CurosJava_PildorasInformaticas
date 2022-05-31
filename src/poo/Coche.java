@@ -19,9 +19,6 @@ public class Coche {
 	private boolean asientos_cuero, climatizador;
 	
 	
-	
-	
-	
 	public Coche() { //Método constructor
 		
 		ruedas=4;
@@ -34,7 +31,6 @@ public class Coche {
 		
 		peso_plataforma=500;
 	
-		
 		
 	}
 	
@@ -104,7 +100,7 @@ public class Coche {
 		}
 	}
 	
-	public String dime_peso_coche() {    //GETTER+SETTER
+	public String dime_peso_coche() {    //SETTER+GETTER
 		
 		int peso_carroceria=500;
 		
