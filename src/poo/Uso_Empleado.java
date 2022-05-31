@@ -29,7 +29,13 @@ public class Uso_Empleado {   //clase principal
 		+ " Fecha de Alta: " + empleado3.dameFechaContrato());*/
 		
 		
-	Empleado[]  misEmpleados=new Empleado[4];
+		Jefatura jefe_RRHH=new Jefatura("Juan", 55000, 2006, 9,25);
+		
+		jefe_RRHH.estableceIncentivo(2570);
+		
+		
+		
+	Empleado[]  misEmpleados=new Empleado[5];
 	
 	misEmpleados[0]=new Empleado("Paco Pérez", 85000, 1990, 12, 17);
 	
@@ -38,6 +44,8 @@ public class Uso_Empleado {   //clase principal
 	misEmpleados[2]=new Empleado("María Martín", 105000, 2002, 3, 15);
 	
 	misEmpleados[3]=new Empleado("Carlos Jiménez");
+	
+	misEmpleados[4]=jefe_RRHH;   //Polimorfismo en acción. Principio de sustitución
 	
 	/*for(int i=0; i<3; i++) {                        //bucle for
 		
