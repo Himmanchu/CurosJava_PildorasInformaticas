@@ -147,12 +147,12 @@ class Jefatura extends Empleado{
 		
 	}
 
-		public void estableceIncentivo(double b) {
+		public void estableceIncentivo(double b) {   //Método SETTER
 			
 			incentivo=b;
 		}
 	
-		public double dameSueldo() {
+		public double dameSueldo() {    //Método Getter
 			
 			double sueldoJefe=super.dameSueldo();
 			
