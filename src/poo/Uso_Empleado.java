@@ -49,6 +49,11 @@ public class Uso_Empleado {   //clase principal
 	
 	misEmpleados[5]=new Jefatura("Marta", 95000,1999,5,26);
 	
+	Jefatura jefa_Finanzas=(Jefatura) misEmpleados[5];
+	
+	jefa_Finanzas.estableceIncentivo(55000);
+	
+	
 	/*for(int i=0; i<3; i++) {                        //bucle for
 		
 		misEmpleados[i].subeSueldo(5);
