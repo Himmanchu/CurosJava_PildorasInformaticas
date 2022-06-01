@@ -162,6 +162,18 @@ class Jefatura extends Empleado{
 	private double incentivo;
 	
 	
-	
-	
 }
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
