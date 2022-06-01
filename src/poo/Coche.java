@@ -47,7 +47,7 @@ public class Coche {
 		//color="azul";
 	}
 	
-	public String dime_color() {
+	public String dime_color() {   //MÉTODO GETTER
 		
 		return "El color del coche es " + color;
 	}

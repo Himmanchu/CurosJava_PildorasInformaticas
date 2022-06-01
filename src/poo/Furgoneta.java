@@ -19,7 +19,7 @@ public Furgoneta(int plazas_extra, int capacidad_carga) {  //método constructor
 	
 	}
 
-	public String dimeDatosFurgoneta() {
+	public String dimeDatosFurgoneta() {   //método Getter
 		
 		return " La capacidad de carga es " + capacidad_carga + " Y las plazas son: " + plazas_extra;
 		
