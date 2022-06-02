@@ -8,15 +8,32 @@ public class Uso_Persona {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
-		
-		
-		
+
 		
 	}
 
 }
 
+
+abstract class Persona{
+	
+	public Persona(String nom) {
+		
+		nombre=nom;
+		
+	}
+	
+	public String dameNombre() {
+		
+		return nombre;
+		
+	}
+	
+	public abstract String dameDescripcion();
+	
+	private String nombre;
+	
+}
 
 class Empleado2{    
 	
