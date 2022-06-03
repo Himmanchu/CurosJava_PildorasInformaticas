@@ -100,6 +100,10 @@ class Empleado implements Comparable{
 		
 		altaContrato=calendario.getTime();
 		
+		++IdSiguiente;
+		
+		Id=IdSiguiente;
+		
 	}
 	
 	public Empleado(String nom) {
@@ -110,7 +114,7 @@ class Empleado implements Comparable{
 	
 	public String dameNombre() {   //getter
 		
-		return nombre;
+		return nombre + " Id: " + Id;
 	}
 	
 	public double dameSueldo() {    //getter
@@ -136,13 +140,13 @@ class Empleado implements Comparable{
 		
 		Empleado otroEmpleado=(Empleado) miObjeto;
 		
-		if(this.sueldo<otroEmpleado.sueldo) {
+		if(this.Id<otroEmpleado.Id) {
 			
 			return -1;
 		}
 
 		
-		if(this.sueldo>otroEmpleado.sueldo) {
+		if(this.Id>otroEmpleado.Id) {
 			
 			return 1;
 		}
@@ -156,6 +160,10 @@ class Empleado implements Comparable{
 	private double sueldo;
 	
 	private Date altaContrato;
+	
+	private static int IdSiguiente;
+	
+	private int Id;
 	
 	
 }
