@@ -72,6 +72,8 @@ public class Uso_Empleado {   //clase principal
 				" Fecga de Alta: " + misEmpleados[i].dameFechaContrato());
 	}*/
 	
+		Arrays.sort(misEmpleados);
+	
 	for(Empleado e: misEmpleados) {     //bucle for each
 		
 		System.out.println("Nombre: " + e.dameNombre() + 
@@ -83,11 +85,12 @@ public class Uso_Empleado {   //clase principal
 	
 }
 
-class Empleado{    
+class Empleado implements Comparable{    
 	
 	public Empleado(String nom, double sue, int agno, int mes, int dia) {
 		
 		//método constructor tiene que tener el mismo nombre que la clase a la que pertenece
+		
 		
 		nombre=nom;
 		
@@ -128,6 +131,25 @@ class Empleado{
 		sueldo+=aumento;
 	}
 	
+	
+	public int compareTo(Object miObjeto) {
+		
+		Empleado otroEmpleado=(Empleado) miObjeto;
+		
+		if(this.sueldo<otroEmpleado.sueldo) {
+			
+			return -1;
+		}
+
+		
+		if(this.sueldo>otroEmpleado.sueldo) {
+			
+			return 1;
+		}
+		
+		return 0;
+		
+	}
 	
 	private String nombre;
 	
