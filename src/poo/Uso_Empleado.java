@@ -51,10 +51,8 @@ public class Uso_Empleado {   //clase principal
 	
 	Jefatura jefa_Finanzas=(Jefatura) misEmpleados[5];
 	
-	jefa_Finanzas.estableceIncentivo(55000);
 	
-	
-	
+
 	
 	/*for(int i=0; i<3; i++) {                        //bucle for
 		
@@ -187,7 +185,6 @@ class Jefatura extends Empleado implements Jefes {
 	public String tomar_decisiones(String decision) {
 		
 		return "Un miembro de la dirección ha tomado la decisión de: " + decision;
-		
 		
 	}
 
