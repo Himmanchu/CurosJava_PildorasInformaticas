@@ -55,7 +55,17 @@ public class Uso_Empleado {   //clase principal
 	
 	Empleado director_comercial=new Jefatura("Sandra", 85000, 2012,05,05);
 	
+	Comparable ejemplo=new Empleado("Elisabeth", 95000, 2011, 06,07);
 	
+	if(director_comercial instanceof Empleado) {
+		
+		System.out.println("Es de tipo Jefatura");
+	}
+	
+	if(ejemplo instanceof Comparable) {
+		
+		System.out.println("Implementa la interfaz comparable");
+	}
 	
 	/*for(int i=0; i<3; i++) {                        //bucle for
 		
