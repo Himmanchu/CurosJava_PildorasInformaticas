@@ -51,6 +51,10 @@ public class Uso_Empleado {   //clase principal
 	
 	Jefatura jefa_Finanzas=(Jefatura) misEmpleados[5];
 	
+	System.out.println("El Jefe " +jefa_Finanzas.dameNombre() + " tiene un bonus de: "
+			+ jefa_Finanzas.establece_bonus(500.0));
+	
+	System.out.println(misEmpleados[3].dameNombre() + " tiene un bonus de: "+misEmpleados[3].establece_bonus(200.0));
 	
 
 	
@@ -88,7 +92,7 @@ public class Uso_Empleado {   //clase principal
 	
 }
 
-class Empleado implements Comparable{    
+class Empleado implements Comparable, Trabajadores{    
 	
 	public Empleado(String nom, double sue, int agno, int mes, int dia) {
 		
@@ -106,6 +110,13 @@ class Empleado implements Comparable{
 		++IdSiguiente;
 		
 		Id=IdSiguiente;
+		
+	}
+	
+	public Double establece_bonus(Double gratificacion) {
+		
+		return Trabajadores.bonus_base+gratificacion;
+		
 		
 	}
 	
@@ -187,6 +198,15 @@ class Jefatura extends Empleado implements Jefes {
 		return "Un miembro de la dirección ha tomado la decisión de: " + decision;
 		
 	}
+	
+	public Double establece_bonus(Double i) {
+		
+		double prima=2000;
+		
+		return Trabajadores.bonus_base + i + prima ;
+		
+		
+	}
 
 	public void estableceIncentivo(double b) {   //Método SETTER
 			
@@ -201,6 +221,8 @@ class Jefatura extends Empleado implements Jefes {
 		}
 		
 	private double incentivo;
+
+
 	
 	
 }
