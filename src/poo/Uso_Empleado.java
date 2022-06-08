@@ -53,24 +53,16 @@ public class Uso_Empleado {   //clase principal
 	
 	jefa_Finanzas.estableceIncentivo(55000);
 	
-	Empleado director_comercial=new Jefatura("Sandra", 85000, 2012,05,05);
 	
-	Comparable ejemplo=new Empleado("Elisabeth", 95000, 2011, 06,07);
 	
-	if(director_comercial instanceof Empleado) {
-		
-		System.out.println("Es de tipo Jefatura");
-	}
-	
-	if(ejemplo instanceof Comparable) {
-		
-		System.out.println("Implementa la interfaz comparable");
-	}
 	
 	/*for(int i=0; i<3; i++) {                        //bucle for
 		
 		misEmpleados[i].subeSueldo(5);
 	}*/
+	
+	System.out.println(jefa_Finanzas.tomar_decisiones("Dar más días de vacaciones a los empleados"));
+	
 	
 	for(Empleado e: misEmpleados) {                  //bucle for each
 		
@@ -182,20 +174,29 @@ class Empleado implements Comparable{
 }
 
 
-class Jefatura extends Empleado{
+class Jefatura extends Empleado implements Jefes {
+	
+	
 	
 	public Jefatura(String nom, double sue, int agno, int mes, int dia) {
 		
 		super(nom, sue, agno, mes, dia);
 		
 	}
+	
+	public String tomar_decisiones(String decision) {
+		
+		return "Un miembro de la dirección ha tomado la decisión de: " + decision;
+		
+		
+	}
 
-		public void estableceIncentivo(double b) {   //Método SETTER
+	public void estableceIncentivo(double b) {   //Método SETTER
 			
 			incentivo=b;
 		}
 	
-		public double dameSueldo() {    //Método Getter
+	public double dameSueldo() {    //Método Getter
 			
 			double sueldoJefe=super.dameSueldo();
 			
