@@ -53,6 +53,9 @@ public class Uso_Empleado {   //clase principal
 	
 	jefa_Finanzas.estableceIncentivo(55000);
 	
+	Empleado director_comercial=new Jefatura("Sandra", 85000, 2012,05,05);
+	
+	
 	
 	/*for(int i=0; i<3; i++) {                        //bucle for
 		
