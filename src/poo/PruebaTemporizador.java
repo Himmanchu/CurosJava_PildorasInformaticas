@@ -1,5 +1,6 @@
 package poo;
 
+import javax.swing.JOptionPane;
 import javax.swing.Timer;
 import java.awt.event.*;
 import java.util.*;
@@ -17,6 +18,10 @@ public class PruebaTemporizador {
 		
 		mitemporizador.start();
 		
+		JOptionPane.showMessageDialog(null, "Pulsa Aceptar para detener");
+		
+		System.exit(0);
+		
 	
 	}
 
@@ -29,7 +34,7 @@ class DameLaHora implements ActionListener{
 		
 		Date ahora=new Date();
 		
-		System.out.println("Te pongo la hora cada 5 segundos: " + ahora);
+		System.out.println("Te pongo la hora cada 5 sg: " + ahora);
 		
 		
 		
