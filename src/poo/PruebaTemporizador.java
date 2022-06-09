@@ -1,8 +1,8 @@
 package poo;
 
-import javax.swing.*;
+import javax.swing.Timer;
 import java.awt.event.*;
-import java.util.Date;
+import java.util.*;
 
 
 
@@ -11,7 +11,11 @@ public class PruebaTemporizador {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		DameLaHora oyente=new DameLaHora();
+		
 		Timer mitemporizador=new Timer(5000, oyente);
+		
+		mitemporizador.start();
 		
 	
 	}
@@ -24,6 +28,9 @@ class DameLaHora implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
 		Date ahora=new Date();
+		
+		System.out.println("Te pongo la hora cada 5 segundos: " + ahora);
+		
 		
 		
 		
