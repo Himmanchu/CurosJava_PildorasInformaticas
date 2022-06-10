@@ -17,7 +17,13 @@ public class PruebaTemporizador2 {
 		// TODO Auto-generated method stub
 
 		
+		Reloj mireloj=new Reloj(3000, true);
 		
+		mireloj.enMarcha();
+		
+		JOptionPane.showMessageDialog(null, "Pulsa aceptar para terminar");
+		
+		System.exit(0);
 		
 		
 	}
@@ -42,7 +48,7 @@ class Reloj{
 		
 		Timer mitemporizador=new Timer(intervalo, oyente);
 		
-		
+		mitemporizador.start();
 	}
 	
 	private int intervalo;
