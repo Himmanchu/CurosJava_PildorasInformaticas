@@ -2,6 +2,8 @@ package poo;
 
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
+
+import java.awt.Toolkit;
 import java.awt.event.*;
 import java.util.*;
 
@@ -30,13 +32,15 @@ public class PruebaTemporizador {
 
 class DameLaHora implements ActionListener{
 	
+	
+	
 	public void actionPerformed(ActionEvent e) {
 		
 		Date ahora=new Date();
 		
 		System.out.println("Te pongo la hora cada 5 sg: " + ahora);
 		
-		
+		Toolkit.getDefaultToolkit().beep();
 		
 		
 	}
