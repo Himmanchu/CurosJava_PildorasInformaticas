@@ -55,6 +55,21 @@ class Reloj{
 	
 	private boolean sonido;
 	
+	private class DameLaHora2 implements ActionListener{
+		
+		public void actionPerformed(ActionEvent event) {
+			
+			Date ahora=new Date();
+			
+			System.out.println("Te pongo la hora cada 3 sg " + ahora);
+			
+			if(sonido==true) {
+				
+				Toolkit.getDefaultToolkit().beep();
+			}
+		}
+	}
+	
 	
 }
 
