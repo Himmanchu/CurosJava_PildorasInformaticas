@@ -14,6 +14,8 @@ public class CreandoMarcos {
 		
 		marco1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		marco1.setTitle("Programa de prueba");
+		
 	}
 
 }
@@ -24,8 +26,13 @@ class miMarco extends JFrame{
 	
 	public miMarco() {
 		
-		setSize(500,300);
+		//setSize(500,300);
 		
+		//setLocation(1100,500);
+		
+		setBounds(1100,500,700,250);
+		
+		setResizable(false);
 	}
 	
 }
