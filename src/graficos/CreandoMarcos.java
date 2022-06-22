@@ -1,5 +1,7 @@
 package graficos;
 
+import java.awt.Frame;
+
 import javax.swing.*;
 
 
@@ -14,7 +16,6 @@ public class CreandoMarcos {
 		
 		marco1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		marco1.setTitle("Programa de prueba");
 		
 	}
 
@@ -33,6 +34,10 @@ class miMarco extends JFrame{
 		setBounds(1100,500,700,250);
 		
 		setResizable(false);
+	
+		//setExtendedState(Frame.MAXIMIZED_BOTH);
+		
+		setTitle("Ventana de prueba");
 	}
 	
 }
