@@ -12,6 +12,7 @@ public class CreandoMarcos {
 		
 		marco1.setVisible(true);
 		
+		marco1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
 
