@@ -39,6 +39,10 @@ class MarcoCentrado extends JFrame{
 		
 		setLocation(anchoPantalla/4, alturaPantalla/4);
 		
+		Image miIcono=mipantalla.getImage("src/graficos/icono.png");
+			
+		setIconImage(miIcono);	
+		
 	}
 	
 }
