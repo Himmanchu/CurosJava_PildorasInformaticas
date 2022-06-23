@@ -13,6 +13,8 @@ public class EscribiendoEnMarco {
 		
 		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		
+		
 	}
 
 }
@@ -29,6 +31,11 @@ class MarcoConTexto extends JFrame{
 		setLocation(400,200);
 		
 		setTitle("Marco con primer Texto");
+		
+		Lamina lamina1=new Lamina();
+		
+		add(lamina1);
+		
 	}
 	
 }
@@ -37,6 +44,8 @@ class Lamina extends JPanel{
 	
 	public void paintComponent(Graphics g) {
 		
-		g.drawString("Estamos aprendiendo Swing", 100, 100);
+		super.paintComponent(g);
+		
+		g.drawString("Estamos aprendiendo Swing", 50, 50);
 	}
 }
