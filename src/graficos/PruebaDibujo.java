@@ -30,6 +30,7 @@ class MarcoConDibujos extends JFrame{
 		LaminaConFiguras laminaFigura=new LaminaConFiguras();
 		
 		add(laminaFigura);
+	
 	}
 }
 
@@ -39,6 +40,11 @@ class LaminaConFiguras extends JPanel{
 		
 		super.paintComponent(g);
 		
-		g.drawRect(50, 50, 300, 50);
+		//g.drawRect(50, 50, 300, 50);
+		
+		g.drawLine(100, 100, 300, 200);
+		
+		
+	
 	}
 }
