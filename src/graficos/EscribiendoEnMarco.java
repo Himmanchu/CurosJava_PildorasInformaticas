@@ -32,3 +32,11 @@ class MarcoConTexto extends JFrame{
 	}
 	
 }
+
+class Lamina extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+		
+		g.drawString("Estamos aprendiendo Swing", 100, 100);
+	}
+}
