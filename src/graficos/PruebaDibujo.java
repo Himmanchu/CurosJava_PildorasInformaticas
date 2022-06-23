@@ -23,10 +23,22 @@ class MarcoConDibujos extends JFrame{
 		
 		setTitle("Prueba de dibujo");
 		
-		setSize(400,400);
+		setSize(600,600);
 		
 		setVisible(true);
 		
+		LaminaConFiguras laminaFigura=new LaminaConFiguras();
 		
+		add(laminaFigura);
+	}
+}
+
+class LaminaConFiguras extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+		
+		super.paintComponent(g);
+		
+		g.drawRect(50, 50, 300, 50);
 	}
 }
